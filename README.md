@@ -1,5 +1,7 @@
 # Vimeo player with cover image
 
+Pull Vimeo data via XMLHttpRequest to display cover thumbnail within div. Onclick, automatically generate iFrame player and auto play video. The benefit of this approach is to minimise page load times as the calls to Vimeo are only made when requested and not on page load.
+
 * Vimeo API
 * XML data
 
