@@ -41,7 +41,7 @@ function setClickResponseFunction(vidDiv) {
 
   // Generate embed src url
   var embedSrc;
-  embedSrc = "https://player.vimeo.com/video/" + vidDiv.dataset.embed + "?autoplay=1"; // on page use data-embed=""
+  embedSrc = "https://player.vimeo.com/video/" + vidDiv.dataset.embed + "?autoplay=1";
 
   // Onclick use JS to generate the iframe including attributes
   vidDiv.addEventListener("click", function(){
@@ -71,10 +71,3 @@ function lazyLoadVimeo() {
 } // END lazyLoadVimeo
 
 lazyLoadVimeo();
-
-/*
- * HTML to access the data
- * Replace {vimeo_id} with dynamic variable to get the video ID
- */
-
-// <div class="player" data-embed="{vimeo_id}"><div class="play-button"></div></div>
