@@ -7,4 +7,4 @@
 
 Replace {vimeo_id} with dynamic variable to get the video ID
 
-* <div class="player" data-embed="{vimeo_id}"><div class="play-button"></div></div>
+`<div class="player" data-embed="{vimeo_id}"><div class="play-button"></div></div>`
