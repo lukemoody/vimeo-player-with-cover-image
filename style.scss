@@ -1,0 +1,55 @@
+/*================ iFrame Video Sizing ================*/
+
+.player {
+	background-color: $body-color;
+	position: relative;
+	padding-top: 56.25%;
+	overflow: hidden;
+	cursor: pointer;
+  img {
+  	width: 100%;
+  	top: -16.82%;
+  	left: 0;
+  	opacity: 0.7;
+  }
+  .play-button {
+  	width: 90px;
+  	height: 60px;
+  	background-color: $body-color;
+  	box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+  	z-index: 1;
+  	opacity: 0.8;
+  	border-radius: 6px;
+    &::before {
+    	content: "";
+    	border-style: solid;
+    	border-width: 15px 0 15px 26.0px;
+    	border-color: transparent transparent transparent $white;
+    }
+  }
+  iframe {
+  	height: 100%;
+  	width: 100%;
+  	top: 0;
+  	left: 0;
+  }
+}
+
+.player img,
+.player .play-button {
+	cursor: pointer;
+}
+
+.player img,
+.player iframe,
+.player .play-button,
+.player .play-button::before {
+	position: absolute;
+}
+
+.player .play-button,
+.player .play-button::before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
