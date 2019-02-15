@@ -1,6 +1,7 @@
-# vimeo-player-with-cover-image
+# Vimeo player with cover image
 
 * Vimeo API
+* XML data
 
 ## HTML to access the data
 
